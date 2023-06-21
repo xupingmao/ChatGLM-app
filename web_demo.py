@@ -25,7 +25,8 @@ def get_src_root_dir():
 sys.path.append("./ChatGLM-6B")
 
 # Fix错误： RuntimeError: Library cudart is not initialized
-os.environ['PATH'] = os.environ.get("PATH", "") + os.pathsep + os.path.join(get_src_root_dir(), "lib")
+torch_dir = os.path.dirname(torch.__file__)
+os.environ['PATH'] = os.environ.get("PATH", "") + os.pathsep + os.path.join(torch_dir, "lib")
 default_model_path = os.path.join(get_src_root_dir(), "THUDM/chatglm-6b")
 default_model_path = os.path.abspath(default_model_path)
 
