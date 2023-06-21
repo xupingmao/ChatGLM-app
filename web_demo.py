@@ -16,10 +16,7 @@ import os
 import torch
 import sys
 from torch.cuda import get_device_properties
-
-
-def get_src_root_dir():
-    return os.path.dirname(__file__)
+from .app_conf import get_src_root_dir
 
 
 sys.path.append("./ChatGLM-6B")
