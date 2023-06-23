@@ -4,7 +4,7 @@ Author: xupingmao
 email: 578749341@qq.com
 Date: 2023-04-15 10:23:28
 LastEditors: xupingmao
-LastEditTime: 2023-06-21 20:39:08
+LastEditTime: 2023-06-23 12:51:17
 FilePath: \ChatGLM-app\web_demo.py
 Description: 描述
 '''
@@ -16,7 +16,7 @@ import os
 import torch
 import sys
 from torch.cuda import get_device_properties
-from .app_conf import get_src_root_dir
+from app_conf import get_src_root_dir
 
 
 sys.path.append("./ChatGLM-6B")
